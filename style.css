@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 h1{
-    font-size: 50px;
+    font-size: 250%;
 }
 .orange-color{
     color: orange;
@@ -11,14 +11,15 @@ h1{
 .flexible-continer{
     display: flex;
     margin: 0px;
+    width: 100%;
 }
 .width{
-    width: 50%;
+    width: 100%;
     padding-left: 4%;
     padding-top: 3%;
 }
 .img{
-    width: 70%;
+    width: 100%;
     
     
 }
@@ -86,4 +87,46 @@ footer{
 }
 b{
     font-size: 40px;
+}
+@media only screen and (min-width: 688px) and ( max-width: 992px) {
+    .flexible-continer{
+        flex-direction: column-reverse;
+    }
+    .img image {
+        width: 100%;
+        margin: 0 10%;
+    }
+    .sawdo{
+        margin: 3%;
+        width: 80%;
+        margin-left: 7%;
+    }
+    .width{
+        width: 80%;
+    }
+    .width-left{
+        width: 80%;
+        margin-left: - 2%;
+    }
+    
+    
+}
+@media only screen and (max-width: 688px) {
+   .flexible-continer{
+     flex-direction: column-reverse;
+    
+   }
+   .width{
+    width: 50%;
+   
+   }
+   .img img{
+    width: 100%;
+   }
+   .sawdo{
+    width: 80%;
+    margin: 3%;
+    margin-left: 7%;
+   }
+    
 }
